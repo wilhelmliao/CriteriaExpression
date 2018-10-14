@@ -73,7 +73,7 @@ namespace CriteriaExpression
 
         public bool Append(Token token)
         {
-            if ((token.Type == TokenType.None ) ||
+            if ((token.Type == TokenType.None    ) ||
                 (token.Type == TokenType.Function) ||
                 (token.Type == TokenType.Variable))
                 return false;
