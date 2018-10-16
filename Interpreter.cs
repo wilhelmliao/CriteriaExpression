@@ -238,7 +238,7 @@ namespace CriteriaExpression
                             case TokenType.String:
                             case TokenType.Variable:
                             case TokenType.Function:
-                            case TokenType.Expression:
+                            case TokenType.EndExpression:
                                 literal.Append(c);
                                 if (!reader.Next())
                                     throw ThrowSyntaxError(reader.Position);
